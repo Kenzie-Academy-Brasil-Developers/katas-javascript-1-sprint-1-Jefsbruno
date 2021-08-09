@@ -3,42 +3,42 @@ function oneThroughTwenty() {
   let teste = []
   
   for (let i = 1; i <= 20; i++){
-      console.log(i);
+      teste+=i+" ";
     }return teste;
 } console.log (oneThroughTwenty());
 
 function evensToTwenty() {
     
-  let cont = 2;
-  let meuretorno = [];
-
-  while (cont<=20) {
-    console.log(cont);
-    cont = cont+2;}
-    return meuretorno
+  let teste = []
+  
+  for (let i = 2;i<=20;i++){
+    num = i%2;
+    if (num%2 == 0){
+    teste+=i+" ";}
+  }return teste
 }
 console.log (evensToTwenty())
 
 function oddsToTwenty() {
   
- let cont = 1;
- let teste = []; 
-
-  while (cont<=20){
-    console.log(cont);
-    cont = cont+2;
+  let teste = []
+  
+  for (let i = 2;i<=20;i++){
+    num = i%2;
+    if (num%2 != 0){
+    teste+=i+" ";}
   }return teste
 }
 console.log(oddsToTwenty())
 
 function multiplesOfFive() {
 
-  let i = 5
-  let teste = []
+  let teste= []
 
-  while (i <=100){
-    console.log(i);
-    i = i+5;
+  for(let i=0;i<100;i++){
+    num = i*5
+    if(num<=100){
+    teste+=num + " "}
   }return teste
 }
 console.log(multiplesOfFive())
@@ -48,55 +48,51 @@ function squareNumbers() {
 let fim = []
 
 for(num=1;num<=10;num++){
-  console.log((num*num))
+  fim += ((num*num)+ (" "))
 }return fim
 }console.log(squareNumbers())
 //call function squareNumbers
 
 function countingBackwards() {
   
-  let num = 20
   let teste = []
   
-  for (let i = 1; i <= 20; i++){
-      console.log(num);
-      num = num-1
-    }return teste
+  for (let i = 20; i>=1; i--){
+      teste+=i+" ";
+    }return teste;
 } console.log(countingBackwards())
 
 function evenNumbersBackwards() {
 
-  let num = 20
   let teste = []
-
-  while (num >1) {
-    console.log(num);
-    num = num-2;}
-    return teste
+  
+  for (let i=20;i>=2;i--){
+    num = i%2;
+    if (num%2 == 0){
+    teste+=i+" ";}
+  }return teste
 }console.log(evenNumbersBackwards())
 
 
 function oddNumbersBackwards() {
 
-let num = 19
-let fim = []
-
-while (num>=1){
-  console.log(num);
-  num = num-2;}
-  return fim
-}console.log(oddNumbersBackwards())
+  let teste = []
+  
+  for (let i=20;i>=1;i--){
+    num = i%2;
+    if (num%2 != 0){
+    teste+=i+" ";}
+  }return teste
+  }console.log(oddNumbersBackwards())
 
 
 function multiplesOfFiveBackwards() {
-
-  let num = 100
-  let fim = []
-
-while (num>=5){
-  console.log(num);
-  num = num-5;}
-  return fim
+let teste = []
+  for(let i=100;i>0;i--){
+    num = i*5
+    if(num<=100){
+    teste+=num + " "}
+  }return teste
 }console.log(multiplesOfFiveBackwards())
 
 
@@ -105,7 +101,7 @@ function squareNumbersBackwards() {
   let fim = []
 
   for(num=10;num>0;num--){
-    console.log((num*num))
+   fim+=((num*num) + " ")
   }return fim  
 }console.log(squareNumbersBackwards())
 
